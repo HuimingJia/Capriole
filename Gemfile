@@ -11,6 +11,7 @@ gem 'rails', '~> 5.0.2'
 gem 'bcrypt',         '3.1.11'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'bootstrap-sass'
 gem 'flat-ui-sass'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
