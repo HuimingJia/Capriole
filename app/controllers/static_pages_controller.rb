@@ -5,9 +5,12 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def method_name
+  def faqs
   end
 
-  def method_name
+  def contactus
+  end
+
+  def parents
   end
 end

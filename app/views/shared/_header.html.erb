@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -10,73 +10,22 @@
       </button>
       <%= link_to 'Capriole', root_path, class: "navbar-brand"%>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-      </li>
-    </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to 'Program1', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program2', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program3', "#"%></li>
-        </ul>
-      </li>
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'Home', root_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Camp Program <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'American Programs', programs_us_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to 'Chinese Programs', programs_cn_path %></li>
+          </ul>
+        </li>
+        <li><%= link_to 'Parents', parents_path %></li>
+        <li><%= link_to 'FAQs', faqs_path %></li>
+        <li><%= link_to 'Contact Us', contactus_path %></li>
+      </ul>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to 'Program1', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program2', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program3', "#"%></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to 'Program1', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program2', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program3', "#"%></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to 'Program1', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program2', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program3', "#"%></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Program <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to 'Program1', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program2', "#"%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to 'Program3', "#"%></li>
-        </ul>
-      </li>
-    </ul>
-
-
   </div><!-- /.container-fluid -->
 </nav>
