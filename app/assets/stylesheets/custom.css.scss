@@ -3,6 +3,8 @@
 @import 'flat-ui';
 
 .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
 }
 .carousel,
@@ -25,4 +27,50 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.logo-small {
+  width: 48px;
+  height: 58px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active{
+    color: #F39C12;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: #F39C12;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #eeeeee;
+    color: #F39C12;
+}
+.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #F39C12;
+    border-bottom-color: #F39C12;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #F39C12;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #F39C12;;
+    border-bottom-color: #F39C12;;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #F39C12;
+    background-color: transparent;
+}
+
+a:hover, a:focus, .caret:hover, .caret:focus{
+  color: #F39C12;
 }
