@@ -1,12 +1,12 @@
-@import 'flat-ui/variables';
-@import 'bootstrap';
-@import 'flat-ui';
+$link-color: #ffa31a;
+$brand-primary: #ffa31a;
+$input-border-focus: #ffa31a;
+$nav-link-hover-bg: #ffa31a;
+$navbar-default-link-hover-color: #ffa31a;
 
-
-$bgDefault      : #d2a679;
-$bgHighlight    : #d2a679;
-$colDefault     : #ecf0f1;
-$colHighlight       : #ffbbbc;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 .navbar {
     padding-top: 10px;
@@ -16,7 +16,11 @@ $colHighlight       : #ffbbbc;
 .carousel,
 .item,
 .active {
-    height: 400px;
+    height: 600px;
+}
+
+.thumbnail img{
+  width: 100%;
 }
 
 .carousel-inner {
@@ -42,41 +46,24 @@ $colHighlight       : #ffbbbc;
   margin-right: 20px;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:active{
-    color: #F39C12;
+.navbar-defaul{
+  color: #000000;
+  background-color: #000000;
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: transparent;
-    color: #F39C12;
+footer{
+  background: #44423d;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #eeeeee;
-    color: #F39C12;
-}
-.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #F39C12;
-    border-bottom-color: #F39C12;
+body{
+  font-family: 'Oswald', sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #F39C12;
-    background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #F39C12;;
-    border-bottom-color: #F39C12;;
-}
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #F39C12;
-    background-color: transparent;
-}
-
-a:hover, a:focus, .caret:hover, .caret:focus{
-  color: #F39C12;
+.form-group{
+  margin: 20px; 
 }
