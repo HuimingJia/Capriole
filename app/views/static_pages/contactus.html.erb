@@ -1,16 +1,17 @@
-<div id="lead" class="row text-center">
+<section id="lead" class="row text-center">
   <div class="col-sm-12">
-    <h2>Contact Us</h2>
-    contact us via email : info@Caprioleedu.com or submit the form below
+    <h2>NEED MORE INFORMATION?</h2>
+    Please fill in the form and send. We will reply you within 24 hours.
   </div>
-</div>
-<hr>
-
-<div id="form" class="row">
+</section>
+<section id="form">
   <div class="col-sm-12">
+    <div class='page-header'>
+      <h3 class="text-muted">Contact Us</h3>
+    </div>
     <div class="col-sm-8">
       <form class="form">
-        <div class="form-group">
+        <div class="form-group row">
           <div class="col-sm-6">
             <h8>First Name</h8>
             <input type="text" class="form-control">
@@ -21,7 +22,7 @@
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
           <div class="col-sm-6">
             <h8>Email</h8>
             <input type="text" class="form-control">
@@ -32,7 +33,7 @@
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
           <div class="col-sm-6">
             <h8>Choose your camp</h8>
             <select name="genre" class="form-control select select-primary">
@@ -56,14 +57,14 @@
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
           <div class="col-sm-12">
             <h8>Message</h8>
             <%= text_area_tag 'message', nil, rows: 5, class: 'form-control'%>
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
           <div class="col-sm-12">
             <input id="contact_submit" type="submit" class="btn btn-primary col-sm-12" value="Submit">
           </div>
@@ -84,36 +85,42 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="row bg-gray">
+  <div class="col-sm-12">
+    <div class='page-header'>
+      <h3 class="text-muted">Our Programs</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200",class: "media-object") %>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200",class: "media-object") %>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200", class: "media-object") %>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+  </br>
 </div>
-<div class="row">
-  <div class='page-header'>
-    <h2>American Camp Programs</h2>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200",class: "media-object") %>
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200",class: "media-object") %>
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <%= image_tag("https://placeholdit.imgix.net/~text?txtsize=158&txt=Slide+One&w=400&h=200", class: "media-object") %>
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
