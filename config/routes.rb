@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/contactus', to: 'static_pages#contactus'
   get '/programs/us', to: 'programs#index_us', as: 'programs_us'
   get '/programs/cn', to: 'programs#index_cn', as: 'programs_cn'
-
+  get '/contactus/confirmation', to: 'mails#send'
   resources :programs
 end
