@@ -1,160 +1,157 @@
-<div id="myCarousel" class="center carousel slide">
-
-
-  <section id="intro">
+<section id="student_safety">
+  <div class="row">
     <div class="col-md-12">
-      <hr>
-        <h3 class="section-heading text-primary text-center">Student Safety</h3>
+      <h3 class="section-heading text-primary text-center">Student Safety</h3>
 
-        <h4 align="center">We provide premium travel insurance for students, including health coverage</h4>
-        <p>Each camp location has security protocols in place to ensure that our students are safe and protected on campus<br>
-        All camp directors have an emergency line at which parents can reach them 24/7<br>
-        Parents need to fill out Health History Forms for their kids to keep us up to date on any special health needs<br>
+      <h4 class="text-center">We provide premium travel insurance for students, including health coverage</h4>
+      <p class="thin-para">Each camp location has security protocols in place to ensure that our students are safe and protected on campus
+        All camp directors have an emergency line at which parents can reach them 24/7
+        Parents need to fill out Health History Forms for their kids to keep us up to date on any special health needs
         Before attending the camp, remember to check with your doctor to see if any essential medications will be required. If so, be sure to bring them with you!</p>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="col-md-12">
-      <hr>
+  <section id="Accommodation_and_Transportation" >
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
         <h3 class="section-heading text-primary text-center">Accommodation and Transportation</h3>
 
-        <p>Airport pick up and drop-off is provided<br>
-        We use a professional bus company for camp activities<br>
-        Students will stay with an American/ Chinese host family, at a private apartment with other campers, or in University residences<br>
-        Overnight housing includes all meals, everyday – breakfast, lunch, and dinner
+        <p class="thin-para">Airport pick up and drop-off is provided
+          We use a professional bus company for camp activities
+          Students will stay with an American/ Chinese host family, at a private apartment with other campers, or in University residences
+          Overnight housing includes all meals, everyday – breakfast, lunch, and dinner
         </p>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="col-md-12">
-      <hr>
+  <section id = "Other_Services">
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
         <h3 class="section-heading text-primary text-center">Other Services</h3>
 
-        <p>If you and/or your child need a visa, we can give advice on the application process and provide the essential documents. Typically, it takes 15-30 days to obtain a visitor visa.<br>
-        For our Chinese camp, parents can also take Chinese classes during the daytime.
+        <p class="thin-para">If you and/or your child need a visa, we can give advice on the application process and provide the essential documents. Typically, it takes 15-30 days to obtain a visitor visa.
+          For our Chinese camp, parents can also take Chinese classes during the daytime.
         </p>
+      </div>
     </div>
   </section>
 
   <section>
-      <div class="col-md-6">
-        <div class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="row">
 
-                <div class="panel panel-default coupon">
-                  <div class="panel-heading" id="head">
-                    <div class="panel-title" id="title">
+            <div class="panel panel-default coupon">
+              <div class="panel-heading" id="head">
+                <div class="panel-title" id="title">
 
-                        <span class="hidden-xs">Coupon</span>
-                        <span class="visible-xs">Coupon</span>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <%= image_tag("custservice.jpg", class: "coupon-img img-rounded") %>
+                  <span class="hidden-xs">Coupon</span>
+                  <span class="visible-xs">Coupon</span>
+                </div>
+              </div>
+              <div class="panel-body">
+                <%= image_tag("custservice.jpg", class: "coupon-img img-rounded") %>
 
-                    <div class="col-md-9">
-                        <ul class="items">
-                            <li>xxxxxxxxxxxxxxxxxxxxx</li>
-                            <li>xxxxxxxxxxxxxxxxxxxxx</li>
-                            <li>xxxxxxxxxxxxxxxxxxxxx</li>
-                            <li>xxxxxxxxxxxxxxxxxxxxx</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="offer">
-                            <span class="usd"><sup>$</sup></span>
-                            <span class="number">00</span>
-                            <span class="cents"><sup>00</sup></span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <p class="disclosure">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
-                    </div>
-                  </div>
-                  <div class="panel-footer">
-                    <div class="coupon-code">
-                        Code: GBWO2
-
-                    </div>
-                    <div class="exp">Expires: xxxxxxxx</div>
+                <div class="col-md-9">
+                  <ul class="items">
+                    <li>we are cheap</li>
+                    <li>we are cheap</li>
+                    <li>we are cheap</li>
+                    <li>we are cheap</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <div class="offer">
+                    <span class="usd"><sup>$</sup></span>
+                    <span class="number">00</span>
+                    <span class="cents"><sup>00</sup></span>
                   </div>
                 </div>
-          </div>
+                <div class="col-md-12">
+                  <p class="disclosure">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="coupon-code">
+                  Code: GBWO2
 
+                </div>
+                <div class="exp">Expires: xxxxxxxx</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class='page-header'>
+            <h3 class="text-muted">Contact Us</h3>
+          </div>
+            <form class="form" role="form" action="/contactus/confirmation" method="GET" >
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <h8>First Name</h8>
+                  <input type="text" name="first_name" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <h8>Second Name</h8>
+                  <input type="text" name="last_name" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <h8>Email</h8>
+                  <input type="text" name="email" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <h8>Phone</h8>
+                  <input type="text" name="phone" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <h8>Choose your camp</h8>
+                  <select name="camp" class="form-control select select-primary">
+                    <option value="None">None</option>
+                    <option value="Architecture">Architecture Portfolio Workshop in LA</option>
+                    <option value="Music">Music Summer Camp in LA</option>
+                    <option value="Chinese">Chinese Summer Camp in Beijing</option>
+                    <option value="Ice">Ice and Snow Winter Camp in Harbin/Beijing</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <h8>Inquire Type*</h8>
+                  <select name="inqure_type" class="form-control select select-primary">
+                    <option value="None">None</option>
+                    <option value="parent">Parent</option>
+                    <option value="student">Student</option>
+                    <option value="school">School</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other/Business</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <h8>Message</h8>
+                  <%= text_area_tag 'message', nil, rows: 5, class: 'form-control', name:'message'%>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input id="contact_submit" type="submit" class="btn btn-primary col-sm-12" value="Submit">
+                </div>
+              </div>
+            </form>
+          </div>
       </div>
-
-  </section>
-  <section id="form">
-    <div class="col-md-6">
-      <div class='page-header'>
-        <h3 class="text-muted">Contact Us</h3>
-      </div>
-      <div class="col-md-6">
-        <form class="form" role="form" action="/contactus/confirmation" method="GET" >
-          <div class="form-group row">
-            <div class="col-md-3">
-              <h8>First Name</h8>
-              <input type="text" name="first_name" class="form-control">
-            </div>
-            <div class="col-md-3">
-              <h8>Second Name</h8>
-              <input type="text" name="last_name" class="form-control">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-md-3">
-              <h8>Email</h8>
-              <input type="text" name="email" class="form-control">
-            </div>
-            <div class="col-md-3">
-              <h8>Phone</h8>
-              <input type="text" name="phone" class="form-control">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-md-3">
-              <h8>Choose your camp</h8>
-              <select name="camp" class="form-control select select-primary">
-                <option value="None">None</option>
-                <option value="Architecture">Architecture Portfolio Workshop in LA</option>
-                <option value="Music">Music Summer Camp in LA</option>
-                <option value="Chinese">Chinese Summer Camp in Beijing</option>
-                <option value="Ice">Ice and Snow Winter Camp in Harbin/Beijing</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <h8>Inquire Type*</h8>
-              <select name="inqure_type" class="form-control select select-primary">
-                <option value="None">None</option>
-                <option value="parent">Parent</option>
-                <option value="student">Student</option>
-                <option value="school">School</option>
-                <option value="teacher">Teacher</option>
-                <option value="other">Other/Business</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-md-6">
-              <h8>Message</h8>
-              <%= text_area_tag 'message', nil, rows: 5, class: 'form-control', name:'message'%>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-md-6">
-              <input id="contact_submit" type="submit" class="btn btn-primary col-sm-12" value="Submit">
-            </div>
-          </div>
-        </form>
-      
-
-
     </div>
   </section>
-
-</div>
