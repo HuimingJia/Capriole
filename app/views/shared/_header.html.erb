@@ -18,14 +18,14 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camp Program<b class="caret"></b></a>
           <ul class="dropdown-menu menu-top">
             <li class="dropdown-submenu"> <a tabindex="-1" href="#">American Programs</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu auto-width">
                 <% program_us.each do |program| %>
                 <li><%= link_to program.name, program %></li>
                 <% end %>
               </ul>
             </li>
             <li class="dropdown-submenu"> <a tabindex="-1" href="#">Chinese Programs</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu auto-width">
                 <% program_cn.each do |program| %>
                 <li><%= link_to program.name, program %></li>
                 <% end %>
