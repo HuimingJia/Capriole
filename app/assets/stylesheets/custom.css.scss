@@ -51,7 +51,6 @@ $navbar-default-link-hover-color: #ffa31a;
 
 footer{
   background: #44423d;
-  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -67,7 +66,7 @@ body{
   margin-top: 60px;
 }
 #apply{
-  width: 15%;
+  width: 20%;
   border: 0px;
 }
 
@@ -82,9 +81,28 @@ body{
   padding-bottom: 50px;
 }
 
+#workshops{
+  margin-top: 100px;
+}
+
+#services{
+  margin-top: 100px;
+}
+
+#program_cn{
+  margin-bottom: 50px;
+}
+
+#our_programs{
+    margin-bottom: 50px;
+}
 .glyphicon-bg{
   color: #ffa31a;
   font-size: 5.2em;
+}
+
+#portfolio{
+  margin-top: 100px;
 }
 .portfolio-box {
   position: relative;
@@ -144,4 +162,57 @@ body{
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+
+
+.dropdown:hover .menu-top {
+    display: block;
+}
+
+.dropdown-submenu{
+    position:relative;
+}
+
+.dropdown-submenu > .dropdown-menu{
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+}
+
+.dropdown-submenu > a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+
+.dropdown-submenu:hover > a:after{
+    border-left-color:#ffffff;
+}
+
+.dropdown-submenu .pull-left{
+    float:none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu{
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
 }
