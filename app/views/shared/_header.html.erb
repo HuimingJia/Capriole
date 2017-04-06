@@ -1,25 +1,43 @@
 <div class="navbar-fixed-top container">
   <div class="navbar navbar-default">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <%= image_tag("logo.png",class: "navbar-header logo-small") %>
-        <%= link_to 'Capriole', root_path, class: "navbar-brand"%>
-      </div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= image_tag("logo.png",class: "navbar-header logo-small") %>
+      <%= link_to 'Capriole', root_path, class: "navbar-brand"%>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <ul class="nav navbar-nav">
-          <li><%= link_to 'Home', root_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Camp Program <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to 'American Programs', programs_us_path %></li>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to 'Chinese Programs', programs_cn_path %></li>
-            </ul>
-          </li>
-          <li><%= link_to 'Parents', parents_path %></li>
-          <li><%= link_to 'Contact Us', contactus_path %></li>
-        </ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camp Program<b class="caret"></b></a>
+          <ul class="dropdown-menu menu-top">
+            <li class="dropdown-submenu"> <a tabindex="-1" href="#">American Programs</a>
+              <ul class="dropdown-menu">
+                <% program_us.each do |program| %>
+                <li><%= link_to program.name, program %></li>
+                <% end %>
+              </ul>
+            </li>
+            <li class="dropdown-submenu"> <a tabindex="-1" href="#">Chinese Programs</a>
+              <ul class="dropdown-menu">
+                <% program_us.each do |program| %>
+                <li><%= link_to program.name, program %></li>
+                <% end %>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <li><%= link_to 'Parents', parents_path %></li>
+        <li><%= link_to 'Contact Us', contactus_path %></li>
       </ul>
 
+    </div>
   </div>
 </div>
